@@ -2,7 +2,7 @@
 //////=========================================================================
 // LOAD MONGOOSE
 const mongoose = require('mongoose');
-// LOAD CONSTANTS
+// LOAD DB CONSTANTS
 const constants = require('../constants/constants');
 //
 //
@@ -12,19 +12,19 @@ const constants = require('../constants/constants');
 //
 module.exports.createConnection = () => {
     return new Promise((resolve, reject) => {
-        let responseObj = {}
+        let responseObject = {}
             mongoose.connect(process.env.DB_URL, 
                 { 
                     useNewUrlParser: true
                 }, (err) => {
                     if(err) {
-                        responseObj.status = constants.databaseStatus.DATABASE_ERROR
-                        console.log('responseObj', responseObj);
-                        return reject(responseObj);
+                        responseObject.status = constants.databaseStatus.DATABASE_ERROR
+                        console.log('responseObject', responseObject);
+                        return reject(responseObject);
                     } else  {
-                        responseObj.status = constants.databaseStatus.DATABASE_CONNECTED
-                        console.log('responseObj', responseObj);
-                        return resolve(responseObj);
+                        responseObject.status = constants.databaseStatus.DATABASE_CONNECTED
+                        console.log('responseObject', responseObject);
+                        return resolve(responseObject);
                     }
             })
         })
