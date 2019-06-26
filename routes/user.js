@@ -3,13 +3,14 @@
 // LOAD EXPRESS | LOAD ROUTER
 const express = require('express');
 const router = express.Router();
+// IMPORT USER CONTROLLER
+const userController = require('../controller/user');
 //
 //////=========================================================================
 //////=========================================================================
 // CONFIGURE API ROUTES
-router.post('/', (req, res, next) => {
-    res.send('User successfully created...');
-})
+router.post('/', userController.createUser);
+
 //
 //////=========================================================================
 //////=========================================================================
