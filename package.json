@@ -1,5 +1,5 @@
 {
-  "name": "node-mongodb-swagger-security",
+  "name": "node-mongodb-swagger",
   "version": "1.0.0",
   "description": "Node API security testing with Swagger",
   "main": "index.js",
