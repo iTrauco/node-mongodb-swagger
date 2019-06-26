@@ -2,7 +2,7 @@
 //////=========================================================================
 // LOAD MONGOOSE
 const mongoose = require('mongoose');
-// LOAD CONSTANTS
+// LOAD DB CONSTANTS
 const constants = require('../constants/constants');
 //
 //
