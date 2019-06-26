@@ -22,7 +22,8 @@ module.exports.createUser = (req, res, next) => {
                 password: '*****',
                 phone: '555-555-5555'
             }
-        }
+        }   
+        // If user is created successfully, return '200' status code w/ 'User successfully created...' response
             switch(responseFromService.status) {
                 case constants.serviceStatus.USER_CREATED_SUCCESSFULLY:
                     responseObject.status = 200
