@@ -9,12 +9,12 @@ const bodyParser = require('body-parser');
 const dotEnv = require('dotenv').config();
 // LOAD CORS
 const cors = require('cors');
-const crudRepository = require('./database/crudRepository');
+const crud = require('./database/crud');
 // CONFIGURE APP
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true})); // 'extended' property allows for the passing of nested objects
 
-crudRepository.createConnection();
+crud.createConnection();
 
 app.use(cors());
 // PORT
