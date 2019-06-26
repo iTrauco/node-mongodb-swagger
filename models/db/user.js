@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 //
 //////=========================================================================
 //////=========================================================================
-// DEFINE 'USER' MODEL/SCHEMA
+// DEFINE MODEL/SCHEMA
 const userSchema = mongoose.Schema({
     name: String,
     phone: Number, 
