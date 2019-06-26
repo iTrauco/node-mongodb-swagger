@@ -9,8 +9,6 @@ Swagger will be used for API documentation.
 
 2. Learn REST API documentation w/ [Swagger](https://swagger.io/)
 
-3. CRUD Routes for MongoDB instead of PostgreSQL
-
 ### Preview
 
 The only visual previews available for the various branches of this repo are concerned with TDD, if available, will be included on the 'Summary/Overview' section of previously merged 'Pull Requests.'
