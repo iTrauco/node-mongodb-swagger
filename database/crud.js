@@ -37,7 +37,7 @@ module.exports.insertData = (data) => {
             data.model.save().then(docs => {
                 // Success
                 resolve({
-                    results:docs,
+                    result: docs,
                     status: constants.databaseStatus.ENTITY_CREATED
                 })
             }).catch(err => {
@@ -49,7 +49,7 @@ module.exports.insertData = (data) => {
             })
 
         } catch(err) {
-            console.log('Oops! An error of some kind occured: crud: insert data', err)
+            console.log('Oops! Something went wrong : CRUD: insert data', err)
         }
     })
 }
